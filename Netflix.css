@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .main{
+        background-position: center center;
+    }
+    .sec-first{
+        flex-wrap: wrap;
+    }
+    .divideline{
+        width: 100%;
+    }
+    .sec-first.first span{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .sec-first.second{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .sec-first.third span{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .sec-first.fourth{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/81bdc063-cb8f-4afe-8a02-a3131ca4ef5e/IN-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_7998f3b6-63e3-424a-8328-550cf777ddce_large.jpg);
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+@media only screen and (max-width: 1100px) {
+    .main{
+        position: relative;
+        background-size: cover;
+        width: auto;
+        
+    }
+}
+.main .top-box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.70;
+    top: 0;
+    background-color: black;
+    position: absolute;
+}
+
+.top-box {
+    color: white;
+    justify-items: center;
+    align-content: center;
+
+}
+
+.main .top-box .text-box {
+    color: white;
+    /* border: 2px solid white;  just for the reference */
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    /* bottom: 55px; */
+    top: 50px;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+
+}
+
+.text-box :nth-child(1) {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text-box :nth-child(2) {
+    font-size: 24px;
+    font-weight: 100;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-box :nth-child(3) {
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 5px;
+    text-align: center;
+}
+
+nav {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 60vw;
+    height: 100px;
+    /* background-color: aliceblue; */
+}
+
+nav img {
+    position: relative;
+    color: red;
+    z-index: 10;
+    width: 140px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.divideline {
+    height: 8px;
+    width: 100%;
+    background-color: rgb(53, 50, 50);
+}
+
+.btn {
+    background-color: red;
+    color: white;
+}
+
+button.btn.btn-gs {
+    padding-top: 11px;
+    padding-bottom: 36px;
+    font-family: sans-serif;
+    font-size: 20px !important;
+    height: 45px;
+    margin-top: 2px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+input.email {
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px !important;
+    height: 45px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border: 1px solid white;
+}
+
+.start {
+    padding-top: 25px;
+}
+
+button.btn.btn-si {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+}
+
+#lang {
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+div option {
+    color: black;
+}
+
+.sec-first {
+    display: flex;
+    justify-content: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+}
+
+.sec-img-vid1 {
+    position: relative;
+}
+
+.sec-img-vid1 img {
+    width: 550px;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img-vid1 video {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+}
+section.sec-first>div{
+    display: flex;
+    flex-direction: column;
+}
+section.sec-first>div :nth-child(1){
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+section.sec-first>div :nth-child(2){
+    font-family: sans-serif;
+    font-size: 24px;
+}
+section.sec-first>div :nth-child(3){
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.third video{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    height: 200px;
+    width: 100%;
+}
+.faq h2{
+    font-family: sans-serif;
+    font-weight: 800;
+    padding: 35px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.faq .faqbox{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    /* transition: all 0.7s ease-in; */
+}
+.faq .faqbox:hover{
+    background-color: rgb(59, 59, 59);   
+}
+.last-section{
+    padding: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin: 60vw;
+    margin: auto;
+    position: relative;
+}
+.start{
+    margin: auto;
+    text-align: center;
+}
+button.btn.btn-gs-bottom {
+    padding-top: 11px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-size: 20px !important;
+    height: 45px;
+    margin-top: 2px;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.last-btn{
+    margin: auto;
+    text-align: center;
+    height: auto;
+    padding-bottom: 4em;
+}
+
+.last-btn button{
+    padding-top: 11px;
+    padding-bottom: 36px;
+    font-family: sans-serif;
+    font-size: 20px !important;
+    height: 45px;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
+.last-btn input{
+    background-color: transparent;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px !important;
+    height: 45px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border: 1px solid white;
+}
+footer{
+    padding-top: 60px;
+    padding-bottom: 80PX;
+    margin: 30vw;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-areas: "question question question question"
+    "foot1 foot2 foot3 foot4"
+    "lang1 lang2 lang3 lang4"
+    "credit1 credit2 credit3 credit4";
+    justify-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer span{
+    grid-area: question;
+    margin-right: 56vw;
+    /* margin-left: 135px; */
+    padding-bottom: 25px;
+}
+footer select{
+    margin-top: 20px;
+    grid-area: lang1;
+}
+footer .By-Irfan{
+    margin-top: 15px;
+    
+    grid-area: credit1;
+}
